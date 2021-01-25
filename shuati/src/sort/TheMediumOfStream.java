@@ -1,4 +1,4 @@
-package niuke.sort;
+package sort;
 
 
 import Utils.ArrayUtils;

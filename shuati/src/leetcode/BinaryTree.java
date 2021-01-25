@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.List;
 
-public class BinaryTree {
+public class  BinaryTree {
 
     /**
      * 非递归后续遍历
