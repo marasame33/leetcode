@@ -14,6 +14,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
   <component name="ProjectId" id="1nYk562guLzi1rE1oGr1L7XR7rL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
