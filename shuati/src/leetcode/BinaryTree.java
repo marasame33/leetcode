@@ -1,6 +1,7 @@
 package leetcode;
 
 import Utils.ArrayUtils;
+import bean.TreeNode;
 import com.google.common.collect.Lists;
 
 import java.util.List;
@@ -13,10 +14,10 @@ public class BinaryTree {
      *
      * @param root
      */
-    public static List<Integer> postorderTraversal(BinaryTreeNode root) {
+    public static List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = Lists.newArrayList();
-        BinaryTreeNode lastVisit = root;
-        Stack<BinaryTreeNode> stack = new Stack<>();
+        TreeNode lastVisit = root;
+        Stack<TreeNode> stack = new Stack<>();
         if (root == null) {
             return Lists.newArrayList();
         }
@@ -25,7 +26,7 @@ public class BinaryTree {
             root = root.left;
         }
         while (!stack.isEmpty()) {
-            BinaryTreeNode p = stack.pop();
+            TreeNode p = stack.pop();
             if (p.right == null || p.right == lastVisit) {
                 lastVisit = p;
                 res.add(p.val);
@@ -46,7 +47,7 @@ public class BinaryTree {
      *
      * @param root
      */
-    public List<Integer> inorderTraversal(BinaryTreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         return null;
     }
 
@@ -55,33 +56,19 @@ public class BinaryTree {
      *
      * @param root
      */
-    public List<Integer> preorderTraversal(BinaryTreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         return null;
     }
 
 
-    static class BinaryTreeNode {
-
-        public int val;
-
-        public BinaryTreeNode left;
-
-        public BinaryTreeNode right;
-
-        public BinaryTreeNode(int val) {
-            this.val = val;
-            this.left = null;
-            this.right = null;
-        }
-    }
 
     public static void main(String[] args) {
-        BinaryTreeNode root = new BinaryTreeNode(1);
-        BinaryTreeNode node1 = new BinaryTreeNode(2);
-        BinaryTreeNode node2 = new BinaryTreeNode(3);
-        BinaryTreeNode node3 = new BinaryTreeNode(4);
-        BinaryTreeNode node4 = new BinaryTreeNode(5);
-        BinaryTreeNode node5 = new BinaryTreeNode(6);
+        TreeNode root = new TreeNode(1);
+        TreeNode node1 = new TreeNode(2);
+        TreeNode node2 = new TreeNode(3);
+        TreeNode node3 = new TreeNode(4);
+        TreeNode node4 = new TreeNode(5);
+        TreeNode node5 = new TreeNode(6);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
