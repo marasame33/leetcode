@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/shuaiti.iml" filepath="$PROJECT_DIR$/.idea/shuaiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shuati/shuaiti.iml" filepath="$PROJECT_DIR$/shuati/shuaiti.iml" />
     </modules>
   </component>
 </project>
